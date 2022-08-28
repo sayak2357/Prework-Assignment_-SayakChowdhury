@@ -11,8 +11,10 @@ class FirstLetterPrinter{
 		boolean flag = true;
 		for(int i=0;i<n;i++){
 			if(flag){
-				op += input.charAt(i);
-				flag = false;
+				if(input.charAt(i)!=' '){
+					op += input.charAt(i);
+					flag = false;
+				}
 			}
 			if(input.charAt(i) == ' '){
 				flag = true;
